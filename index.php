@@ -5,7 +5,7 @@ $page = $_SERVER['REQUEST_URI'];
 
 //header
 
-
+include_once("header.php");
 
 //menu
 include_once("menu.php");
