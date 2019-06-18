@@ -11,3 +11,6 @@ foreach(dbQuery("select value from settings where property='site author';") as $
 
 
 }
+?>
+</body>
+</html>

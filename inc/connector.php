@@ -1,7 +1,6 @@
 <?php
 
 function dbQuery($query)
-
 {
     try {
         require("settings.php");
