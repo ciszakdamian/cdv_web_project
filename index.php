@@ -3,8 +3,15 @@ require_once("inc/connector.php");
 
 $page = $_SERVER['REQUEST_URI'];
 
+//header
+
+
+
+//menu
 include_once("menu.php");
 
+
+//main
 if ($page == "/") {
 
 
@@ -28,3 +35,7 @@ if ($page == "/") {
     echo "Error 404 - Page not found";
     echo "<br/> <a href='/'> Powrót do strony głównej";
 }
+
+//footer
+
+include_once('footer.php');
