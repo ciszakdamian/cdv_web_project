@@ -16,7 +16,7 @@ if ($page == "/") {
 
 
 
-    echo "home";
+    //echo "home";
 } elseif ($page == "/oferta") {
     echo "oferta";
 } elseif ($page == "/galeria") {
