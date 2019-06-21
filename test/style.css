@@ -1,5 +1,10 @@
+html,body {
+    height: 100%;
+}
+
 #header {
     background-color: crimson;
+
 }
 
 #menu {
@@ -8,4 +13,16 @@
 
 #nav {
     background-color: lightblue;
+}
+
+#content {
+    background-color: blanchedalmond;
+    height: 100%;
+    min-height: 100%;
+}
+
+#footer {
+    background-color: darksalmon;
+    position:absolute;
+    bottom:0;
 }
