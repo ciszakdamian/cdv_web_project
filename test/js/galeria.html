@@ -1,0 +1,121 @@
+﻿<html>
+<head>
+<style>
+body {
+margin:0px;
+}
+#main {
+width:100%;
+height:100%;
+background-color:red;
+}
+#header1 {
+width:100%;
+height:7%;
+background-color:green;
+}
+#header2 {
+width:100%;
+height:25%;
+background-color:blue;
+}
+img {
+border:2px solid navy;
+}
+#menu1 {
+width:20%;
+height:68%;
+background-color:violet;
+float:left;
+}
+#content {
+width:60%;
+height:68%;
+float:left;
+background-color:navy;
+}
+#menu2 {
+width:20%;
+height:68%;
+background-color:violet;
+float:right
+}
+
+
+</style>
+<script type="text/javascript">
+var i=1;
+
+
+
+//next
+function next(){
+
+if (i<=9 || p!=1){
+i=i+1;
+document.getElementById("obrazek").innerHTML = '<img id="fotka" src="images/'+i+'.jpg"/>';
+
+}else{
+
+}
+};
+
+//back
+function back(){
+
+if (i>1 || z!=1){
+i=i-1;
+document.getElementById("obrazek").innerHTML = '<img id="fotka" src="images/'+i+'.jpg"/>';
+}else{
+
+}
+};
+
+//klik
+function obr(n){
+document.getElementById("obrazek").innerHTML = '<img id="fotka" src="images/'+n+'.jpg"/>';
+};
+
+
+</script>
+</head>
+<body>
+<div id="main">
+	<div id="header1">
+	<center>Galeria Zdjęć</center>
+	</div>
+	<div id="header2"></br></br>
+	<center>
+	<a href="javascript:obr(1)"> <img src="images/1.jpg" width="100px" height="80px"></a>
+	<a href="javascript:obr(2)"><img src="images/2.jpg" width="100px" height="80px"></a>
+	<a href="javascript:obr(3)"><img src="images/3.jpg" width="100px" height="80px"></a>
+	<a href="javascript:obr(4)"><img src="images/4.jpg" width="100px" height="80px"></a>
+	<a href="javascript:obr(5)"><img src="images/5.jpg" width="100px" height="80px"></br>
+	<a href="javascript:obr(6)"><img src="images/6.jpg" width="100px" height="80px"></a>
+	<a href="javascript:obr(7)"><img src="images/7.jpg" width="100px" height="80px"></a>
+	<a href="javascript:obr(8)"><img src="images/8.jpg" width="100px" height="80px"></a>
+	<a href="javascript:obr(9)"><img src="images/9.jpg" width="100px" height="80px"></a>
+	<a href="javascript:obr(10)"><img src="images/10.jpg" width="100px" height="80px"></a>
+	</center>
+	</div>
+		<div id="menu1">
+		<input type="button" onclick="back()"id="back" value="Poprzedni Obrazek">
+		<br/>
+
+		</div>
+			<div id="content">
+			<center>
+				<div id="obrazek">
+					<img id="fotka" src="images/1.jpg"/>
+				</div>
+				</center>
+			<center>
+			</center>
+			</div>
+				<div id="menu2">
+				<input type="button" onclick="next()" id="next" value="Nastepny Obrazek">
+				<br/>
+				</div>
+</div>
+</body>
+</html>

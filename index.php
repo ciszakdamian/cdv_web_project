@@ -45,11 +45,6 @@ if ($page == "/") {
         echo $row['text'];
     }
 
-    foreach(dbQuery("select text from articles a inner join categories c on a.id_category = c.id_category where a.title='dane kontaktowe' and c.name='Kontakt';") as $row) {
-        echo $row['text'];
-    }
-
-
 } else {
     http_response_code(404);
     echo "Error 404 - Page not found";

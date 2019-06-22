@@ -66,9 +66,6 @@ footer {
     text-decoration-color: #cc0033;
 }
 
-
-
-
 @media screen and (min-width: 576px){
     .company-name {
         font-size: 2em;
@@ -115,6 +112,7 @@ footer {
     position:relative;
     height:0;
 }
+
 .map-responsive iframe{
     left:0;
     top:0;
