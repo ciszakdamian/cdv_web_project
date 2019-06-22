@@ -6,9 +6,9 @@ include_once("src/header.php");
 //menu
 include_once("src/nav.php");
 ?>
-
-<main>
-    <article class="text-justify">
+    <div class="row margin-zero">
+    <main class="col-lg-8 col-sm-12">
+        <article>
 
 <?php
 
@@ -61,6 +61,11 @@ if ($page == "/") {
     </article>
 </main>
 
+
+
+
 <?php
-//footer
+
+include_once('src/aside.php');
+
 include_once('src/footer.php');

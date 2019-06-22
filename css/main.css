@@ -10,6 +10,10 @@ html,body {
     margin-left:auto
 }
 
+.margin-zero {
+    margin: 0px;
+}
+
 header {
     background-color: #BFCDCD;
     min-height: 35vh;
@@ -17,7 +21,7 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border: 2px solid #cc0033;
+    #border: 2px solid #cc0033;
 }
 
 nav {
@@ -27,10 +31,16 @@ nav {
 main {
     background-color: white;
     min-height: 65vh;
-    border: 2px solid #cc0033;
-    padding: 30px;
+    #border: 2px solid #cc0033;
+    padding: 15px;
     background-color: #DFDFE4;
 }
+
+aside {
+    padding: 15px;
+}
+
+
 
 footer {
     background-color: #cc0033;
@@ -56,6 +66,9 @@ footer {
     text-decoration-color: #cc0033;
 }
 
+
+
+
 @media screen and (min-width: 576px){
     .company-name {
         font-size: 2em;
@@ -65,6 +78,14 @@ footer {
 @media screen and (min-width: 768px){
     .company-name {
         font-size: 3em;
+    }
+}
+
+@media screen and (min-width: 992px){
+
+    aside {
+        border-left: 2px solid #cc0033;
+
     }
 }
 
@@ -87,3 +108,18 @@ footer {
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
