@@ -21,12 +21,14 @@ nav {
 main {
     background-color: white;
     min-height: 65vh;
+    border: 1px solid #cc0033;
 }
 
 footer {
     background-color: #cc0033;
     color:whitesmoke;
     text-align: right;
+
 }
 
 .company-name {
@@ -49,8 +51,6 @@ footer {
         font-size: 3em;
     }
 }
-
-
 
 .navbar-brand {
     color: #FCCC76;

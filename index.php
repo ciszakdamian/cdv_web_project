@@ -7,8 +7,8 @@ include_once("src/header.php");
 include_once("src/menu.php");
 ?>
 
-<main id="content" class="row">
-    <article class="col-sm-12">
+<main>
+    <article class="text-justify">
 
 <?php
 
@@ -57,8 +57,10 @@ if ($page == "/") {
 }
 
 ?>
+
     </article>
 </main>
+
 <?php
 //footer
 include_once('src/footer.php');
