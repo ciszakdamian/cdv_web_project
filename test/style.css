@@ -3,6 +3,16 @@ html,body {
     background-color: #DFDFE4;
 }
 
+.container-fluid {
+    padding-right:0;
+    padding-left:0;
+    margin-right:auto;
+    margin-left:auto
+}
+
+.margin-zero {
+    margin: 0px;
+}
 
 header {
     background-color: #BFCDCD;
@@ -11,7 +21,7 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
+    #border: 2px solid #cc0033;
 }
 
 nav {
@@ -21,8 +31,16 @@ nav {
 main {
     background-color: white;
     min-height: 65vh;
-    border: 1px solid #cc0033;
+    #border: 2px solid #cc0033;
+    padding: 15px;
+    background-color: #DFDFE4;
 }
+
+aside {
+    padding: 15px;
+}
+
+
 
 footer {
     background-color: #cc0033;
@@ -36,8 +54,19 @@ footer {
     font-weight: bold;
     font-size: 1.2em;
     background-color: rgba(0,0,0,0.5);
-    border: 2px solid #cc0033;
+    #border: 2px solid #cc0033;
 }
+.company-name > u > a {;
+    color: #FCCC76;
+}
+.company-name > u > a:hover {
+    color: #f5f5f5 ;
+}
+.company-name > u {
+    text-decoration-color: #cc0033;
+}
+
+
 
 
 @media screen and (min-width: 576px){
@@ -49,6 +78,14 @@ footer {
 @media screen and (min-width: 768px){
     .company-name {
         font-size: 3em;
+    }
+}
+
+@media screen and (min-width: 992px){
+
+    aside {
+        border-left: 2px solid #cc0033;
+
     }
 }
 
@@ -72,4 +109,17 @@ footer {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
 

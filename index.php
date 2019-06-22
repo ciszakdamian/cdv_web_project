@@ -4,7 +4,7 @@
 include_once("src/header.php");
 
 //menu
-include_once("src/menu.php");
+include_once("src/nav.php");
 ?>
 
 <main>
