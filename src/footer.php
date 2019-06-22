@@ -1,9 +1,8 @@
+<footer id="footer" class="row">
+    <div class="col-sm-12">
 <?php
 
 require_once("inc/connector.php");
-
-echo '</br> </br> Footer </br> ';
-
 
 foreach(dbQuery("select value from settings where property='site author';") as $row) {
 
@@ -12,5 +11,8 @@ foreach(dbQuery("select value from settings where property='site author';") as $
 
 }
 ?>
+    </div>
+</footer>
 </body>
 </html>
+

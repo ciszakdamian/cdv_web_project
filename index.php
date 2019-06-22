@@ -1,12 +1,16 @@
 <?php
 
 //header
-
 include_once("src/header.php");
 
 //menu
 include_once("src/menu.php");
+?>
 
+<main id="content" class="row">
+    <article class="col-sm-12">
+
+<?php
 
 //main
 $page = $_SERVER['REQUEST_URI'];
@@ -52,6 +56,9 @@ if ($page == "/") {
     echo "<br/> <a href='/'> Powrót do strony głównej";
 }
 
+?>
+    </article>
+</main>
+<?php
 //footer
-
 include_once('src/footer.php');
