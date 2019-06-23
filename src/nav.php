@@ -10,7 +10,7 @@
 <?php
 require_once("inc/connector.php");
 
-foreach(dbQuery("select * from categories;") as $row) {
+foreach(dbQuery("select * from pages;") as $row) {
 
     echo "<a class='nav-item nav-link' href='".$row['page_url']."'>".$row['name']."</a>";
 }

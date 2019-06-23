@@ -18,7 +18,7 @@ require_once("inc/connector.php");
 
 if ($page == "/") {
 
-    foreach(dbQuery("select * from articles a inner join categories c on a.id_category = c.id_category where c.name='Strona główna';") as $row) {
+    foreach(dbQuery("select * from articles a inner join pages p on a.id_page = p.id_page where p.name='Strona główna';") as $row) {
        print($row['title']);
        echo $row['text'];
     }
@@ -26,7 +26,7 @@ if ($page == "/") {
     //echo "home";
 } elseif ($page == "/o-nas") {
 
-    foreach(dbQuery("select text from articles a inner join categories c on a.id_category = c.id_category where a.title='o firmie' and c.name='O firmie';") as $row) {
+    foreach(dbQuery("select * from articles a inner join pages p on a.id_page = p.id_page where p.name='o firmie' and p.name='O firmie';") as $row) {
         echo $row['text'];
     }
 
@@ -35,13 +35,13 @@ if ($page == "/") {
 
 } elseif ($page == "/oferta") {
 
-    foreach(dbQuery("select text from articles a inner join categories c on a.id_category = c.id_category where a.title='oferta' and c.name='Oferta';") as $row) {
+    foreach(dbQuery("select text from articles a inner join pages p on a.id_page = p.id_page where a.title='oferta' and p.name='Oferta'") as $row) {
         echo $row['text'];
     }
 
 } elseif ($page == "/kontakt") {
 
-    foreach(dbQuery("select text from articles a inner join categories c on a.id_category = c.id_category where a.title='Formularz kontaktowy' and c.name='Kontakt';") as $row) {
+    foreach(dbQuery("select text from articles a inner join pages p on a.id_page = p.id_page where a.title='Formularz kontaktowy' and p.name='kontakt'") as $row) {
         echo $row['text'];
     }
 
