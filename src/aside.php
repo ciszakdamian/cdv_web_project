@@ -8,23 +8,17 @@
 
     </div>
     <address class="text-center">
-        <br/>
-        Firma Usługowo – Handlowa
-        <br/>
-        BIS-CAR
-        <br/>
-        Jarosław Ciszak
-        <br/>
-        NIP: 779 18 92 061
-        <br/>
-        ul. Budziszyńska 49
-        <br/>
-        60-179 Poznań
-        <br/>
-        tel. <a href="tel:504577600">504 577 600</a>
-        <br/>
-        e-mail: <a href="mailto:biscar@wp.pl">biscar@wp.pl</a>
-        <br/>
+        <?php
+
+        require_once("inc/connector.php");
+
+        foreach(dbQuery("select value from settings where property='company_address';") as $row) {
+
+            echo $row['value'];
+
+
+        }
+        ?>
     </address>
 </aside>
 </div>

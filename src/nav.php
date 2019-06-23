@@ -1,5 +1,17 @@
 <nav class="navbar navbar-expand-sm link">
-    <span class="navbar-brand">Twój serwis - Bis-Car</span>
+
+    <?php
+
+    require_once("inc/connector.php");
+
+    foreach(dbQuery("select value from settings where property='company_nav_name';") as $row) {
+
+        echo "<span class='navbar-brand'>".$row['value']."</span>";
+
+
+    }
+    ?>
+
     <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navButton" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 
         <span class="navbar-toggler-icon"></span>

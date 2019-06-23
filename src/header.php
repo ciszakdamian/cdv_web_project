@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <title>AutoSerwis - Bis-Car</title>
+    
+    <?php
+
+    require_once("inc/connector.php");
+
+    foreach(dbQuery("select value from settings where property='site title';") as $row) {
+
+        echo "<title>".$row['value']."</title>";
+    }
+    ?>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,24 +31,20 @@
 
         <div class="company-name d-flex align-self-center">
             <u>
-                <a href="/">Auto Serwis Bis-Car</a>
+                <?php
+
+                require_once("inc/connector.php");
+
+                foreach(dbQuery("select value from settings where property='company_name';") as $row) {
+
+                    echo "<a href='/'>".$row['value']."</a>";
+
+                }
+                ?>
             </u>
         </div>
-
 
     </header>
 
 <?php
-/**
 
-require_once("inc/connector.php");
-
-echo '</br> </br> Header </br> ';
-
-foreach(dbQuery("select value from settings where property='site name';") as $row) {
-
-    echo $row['value'];
-
-
-}
-**/
