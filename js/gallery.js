@@ -6,8 +6,13 @@ function postAjax(number) {
         type: "POST",
         url: '../src/postGallery.php',
         data: {imageCounter: number },
+        dataType: 'json',
         success: function(data){
-            document.querySelector('#galleryImage').src = "data:image/jpg;base64,"+data+"";
+            document.querySelector('#galleryImage').src = "data:image/jpg;base64,"+data[0]+"";
+            document.querySelector('#galleryImage').alt = data[1];
+            document.querySelector('#galleryTitle').innerHTML = data[2];
+            document.querySelector('#galleryDescription').innerHTML = data[3];
+
         }
     });
 }

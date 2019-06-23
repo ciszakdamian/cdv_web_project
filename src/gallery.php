@@ -1,11 +1,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <div id="gallery">
 
-    <div class="text-center" id="galleryTitle">Tytuł obrazek 1</div>
+    <div class="text-center" id="galleryTitle"></div>
 
-    <img class="img-fluid" id="galleryImage" src="images/1.jpg" alt="Jakiś tam obrazek" title="jakis tytul">
+    <img class="img-fluid" id="galleryImage" src="" alt="">
 
-    <div class="text-center" id="galleryDescription">Opis obrazek 1</div>
+    <div class="text-center" id="galleryDescription"></div>
 
     <div class="text-center">
 
