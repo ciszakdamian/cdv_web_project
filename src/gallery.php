@@ -9,8 +9,8 @@
 
     <div class="text-center">
 
-        <button id="previousImage"><--</button>
-        <button id="nextImage">--></button>
+        <button class="btn btn-outline-danger" id="previousImage">Wstecz</button>
+        <button class="btn btn-outline-danger" id="nextImage">Dalej</button>
 
         <script type="text/javascript" src="../js/gallery.js"></script>
 
