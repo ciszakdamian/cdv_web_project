@@ -29,7 +29,6 @@ function nextImage() {
 
         postAjax(imageCounter);
 
-
     } else {
         imageCounter--;
     }
